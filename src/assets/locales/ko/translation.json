@@ -1,0 +1,20 @@
+{
+  "routes": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "tech-stack": "TECH STACK",
+    "setting": "SETTING"
+  },
+  "languages": {
+    "ko": "한국어",
+    "en": "English"
+  },
+  "theme": {
+    "light": "밝은",
+    "dark": "어두운"
+  },
+  "setting": {
+    "language": "언어",
+    "theme": "테마"
+  }
+}
