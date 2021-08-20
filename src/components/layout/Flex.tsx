@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { flexCenter } from "styles/mixin";
 
 export enum MainAxisAlignment {
   start = "flex-start",
@@ -22,6 +23,8 @@ interface FlexProps extends Dimension {
   reverse?: boolean;
   mainAxisAlignment?: MainAxisAlignment;
   crossAxisAlignment?: CrossAxisAlignment;
+  gap?: string;
+  padding?: string;
 }
 
 const Flex = styled.div<FlexProps>`
@@ -30,6 +33,8 @@ const Flex = styled.div<FlexProps>`
   display: ${(p) => (p.inline ? "inline-flex" : "flex")};
   justify-content: ${(p) => p.mainAxisAlignment};
   align-items: ${(p) => p.crossAxisAlignment};
+  gap: ${(p) => p.gap};
+  padding: ${(p) => p.padding};
 `;
 
 export const Column = styled(Flex)`
@@ -38,4 +43,8 @@ export const Column = styled(Flex)`
 
 export const Row = styled(Flex)`
   flex-direction: ${(p) => (p.reverse ? "row-reverse" : "row")};
+`;
+
+export const FlexCenter = styled.div`
+  ${flexCenter};
 `;

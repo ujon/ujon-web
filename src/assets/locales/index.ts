@@ -1,4 +1,9 @@
-import kr from "./kr";
+import ko from "./ko";
 import en from "./en";
 
-export default { kr, en };
+const locales = {
+  ko,
+  en,
+};
+
+export default locales;

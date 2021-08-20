@@ -10,9 +10,9 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: ["en", "kr"],
+    fallbackLng: ["en", "ko"],
     interpolation: { escapeValue: false },
-    keySeparator: false,
+    keySeparator: ".",
   });
 
 export default i18n;

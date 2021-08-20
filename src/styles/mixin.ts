@@ -7,6 +7,12 @@ export const absoluteCenter = css`
   transform: translate(-50%, -50%);
 `;
 
+export const flexCenter = css`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const button = css`
   display: inline-block;
   box-sizing: border-box;
