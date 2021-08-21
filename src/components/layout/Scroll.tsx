@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import { Mixin } from "styles";
 
 interface ScrollProps {
   direction?: Axis;
+  displayScrollBar?: boolean;
 }
 const handleDriection = (direction?: Axis) => {
   switch (direction) {
@@ -25,5 +27,12 @@ const handleDriection = (direction?: Axis) => {
 export const ScrollView = styled.div<ScrollProps>`
   width: 100%;
   height: 100%;
-  ${(p) => handleDriection(p.direction)}
+  ${(p) => handleDriection(p.direction)};
+  // Scroll Bar
+  ${({ displayScrollBar }) => {
+    if (!displayScrollBar) return Mixin.hideScrollBar;
+  }}
 `;
+ScrollView.defaultProps = {
+  displayScrollBar: true,
+};
