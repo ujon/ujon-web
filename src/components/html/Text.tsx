@@ -25,7 +25,6 @@ export const H2 = styled.h2<TextProps>`
 
 const Text = styled.p<TextProps>`
   color: ${(p) => p.color};
-
   :hover {
     color: ${(p) => p.hoverColor};
   }

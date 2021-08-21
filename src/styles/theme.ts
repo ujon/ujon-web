@@ -17,6 +17,16 @@ const dark: DefaultTheme = {
   text: palette.gallery,
 };
 
+export const themeSelector = (key?: ThemeType) => {
+  switch (key) {
+    case "dark":
+      return Theme.dark;
+    case "light":
+    default:
+      return Theme.light;
+  }
+};
+
 export const Theme = {
   light,
   dark,
