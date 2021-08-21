@@ -13,9 +13,10 @@ export const flexCenter = css`
   justify-content: center;
 `;
 
-export const button = css`
-  display: inline-block;
-  box-sizing: border-box;
-  text-align: center;
-  user-select: none;
+export const hideScrollBar = css`
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 `;
