@@ -1,0 +1,51 @@
+:root {
+    /* base */
+    --base-size-1: 0.0625rem; /* 1px */
+    --base-size-2: 0.125rem; /* 2px */
+    --base-size-4: 0.25rem; /* 4px */
+    --base-size-8: 0.5rem; /* 8px */
+    --base-size-12: 0.75rem; /* 12px */
+    --base-size-16: 1rem; /* 16rem */
+    --base-size-20: 1.25rem; /* 20px */
+    --base-size-24: 1.5rem; /* 24px */
+    --base-size-28: 1.75rem; /* 28px */
+    --base-size-32: 2rem; /* 32px */
+    --base-size-40: 2.5rem; /* 40px */
+    --base-size-48: 3rem; /* 48px */
+    --base-size-56: 3.5rem; /* 56px */
+    --base-size-64: 4rem; /* 64px */
+    --base-size-80: 5rem; /* 80px */
+    --base-size-96: 6rem; /* 96px */
+    --base-size-112: 7rem; /* 112px */
+    --base-size-128: 8rem; /* 128px */
+    --base-size-180: 11.25rem; /* 180px */
+
+    --base-radius-lg: 0rem;
+    --base-radius-md: 0rem;
+    --base-radius-sm: 0rem;
+
+    --base-padding-lg: 2.5rem;
+    --base-padding-md: 2rem;
+    /*--base-padding-md: 3.5rem;*/
+    --base-padding-sm: 1rem;
+
+    --base-icon-sm: 1.25rem;
+    --base-icon-md: 1.5rem;
+    --base-icon-lg: 2rem;
+
+    --base-blur: 10px;
+
+    --base-max-width: 1280px;
+    /* actions:button */
+    --botton-height-md: 3rem;
+    --button-padding-md: 1rem;
+    /* actions:tag */
+    --tag-height-md: 1.625rem;
+    --tag-padding-md: 0.5rem;
+    --tag-height-sm: 1.25rem;
+    --tag-padding-sm: 0.5rem;
+
+    /* layout */
+    --header-height: 4rem;
+    --main-height: calc(100vh - var(--header-height));
+}

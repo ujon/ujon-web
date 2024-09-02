@@ -1,0 +1,25 @@
+.btn {
+    display: inline-flex;
+    height: var(--botton-height-md);
+    padding: 0 var(--button-padding-md);
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--base-radius-md);
+    background-color: var(--color-btn);
+    border-color: var(--color-btn);
+
+    box-sizing: border-box;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(0, 0, .2, 1);
+}
+
+.btn.no-animation:active {
+    transform: none;
+}

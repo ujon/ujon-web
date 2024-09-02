@@ -1,0 +1,22 @@
+.tag {
+    display: inline-flex;
+    height: var(--tag-height-md);
+    padding: 0 var(--tag-padding-md);
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--base-radius-md);
+    background-color: var(--color-tag);
+    border-color: var(--color-tag);
+
+    box-sizing: border-box;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.tag.tag-sm {
+    height: var(--tag-height-sm);
+    padding: 0 var(--tag-padding-sm);
+    border-radius: var(--base-radius-sm);
+
+}

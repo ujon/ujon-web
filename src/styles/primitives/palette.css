@@ -1,0 +1,72 @@
+:root {
+    --palette-black: hsla(0, 0%, 0%, 1); /* #000000 */
+    --palette-white: hsla(0, 0%, 100%, 1); /* #ffffff */
+
+    --palette-neutral-0: hsla(220, 16%, 99%, 1); /* #fcfcfd */
+    --palette-neutral-1: hsla(220, 14%, 96%, 1); /* #f4f5f6 */
+    --palette-neutral-3: hsla(220, 10%, 92%, 1); /* #e6e8ec */
+    --palette-neutral-4: hsla(220, 16%, 74%, 1); /* #b1b5c3 */
+    --palette-neutral-5: hsla(220, 12%, 70%, 1); /* #a8aebb */
+    --palette-neutral-6: hsla(220, 8%, 52%, 1); /* #777e90 */
+    --palette-neutral-7: hsla(220, 12%, 26%, 1); /* #353945 */
+    --palette-neutral-8: hsla(220, 14%, 19%, 1); /* #23262f */
+    --palette-neutral-9: hsla(220, 13%, 10%, 1); /* #141416 */
+
+    --palette-yellow-0: hsla(48, 100%, 91%, 1); /* #fff9e6 */
+    --palette-yellow-1: hsla(48, 96%, 73%, 1); /* #ffe89f */
+    --palette-yellow-2: hsla(48, 94%, 64%, 1); /* #ffd86c */
+    --palette-yellow-3: hsla(48, 92%, 55%, 1); /* #ffc83a */
+    --palette-yellow-4: hsla(48, 92%, 55%, 1); /* #ffbf00, primary */
+    --palette-yellow-5: hsla(48, 88%, 49%, 1); /* #e6ac00 */
+    --palette-yellow-6: hsla(48, 86%, 44%, 1); /* #cc9900 */
+    --palette-yellow-7: hsla(48, 84%, 39%, 1); /* #b38600 */
+    --palette-yellow-8: hsla(48, 82%, 34%, 1); /* #997300 */
+    --palette-yellow-9: hsla(48, 80%, 29%, 1); /* #806000 */
+
+    --palette-navy-0: hsla(210, 100%, 96%, 1); /* #e6f0ff */
+    --palette-navy-1: hsla(210, 100%, 86%, 1); /* #b3d1ff */
+    --palette-navy-2: hsla(210, 100%, 76%, 1); /* #80b3ff */
+    --palette-navy-3: hsla(210, 100%, 66%, 1); /* #4d94ff */
+    --palette-navy-4: hsla(210, 100%, 56%, 1); /* #1a75ff */
+    --palette-navy-5: hsla(210, 100%, 50%, 1); /* #004080, secondary */
+    --palette-navy-6: hsla(210, 100%, 45%, 1); /* #00366c */
+    --palette-navy-7: hsla(210, 100%, 40%, 1); /* #002e59 */
+    --palette-navy-8: hsla(210, 100%, 35%, 1); /* #002646 */
+    --palette-navy-9: hsla(210, 100%, 30%, 1); /* #001e33 */
+
+}
+
+:root[data-theme="light"] {
+    --palette-neutral-0: hsla(0, 0%, 100%, 1); /* #ffffff */
+    --palette-neutral-1: hsla(210, 33%, 97%, 1); /* #f6f8fa */
+    --palette-neutral-2: hsla(210, 31%, 95%, 1); /* #eff2f5 */
+    --palette-neutral-3: hsla(210, 27%, 92%, 1); /* #e6eaef */
+    --palette-neutral-4: hsla(210, 24%, 89%, 1); /* #e0e6eb */
+    --palette-neutral-5: hsla(210, 22%, 86%, 1); /* #dae0e7 */
+    --palette-neutral-6: hsla(210, 19%, 82%, 1); /* #d1d9e0 */
+    --palette-neutral-7: hsla(210, 17%, 80%, 1); /* #c8d1da */
+    --palette-neutral-8: hsla(213, 12%, 55%, 1); /* #818b98 */
+    --palette-neutral-9: hsla(213, 12%, 40%, 1); /* #59636e */
+    --palette-neutral-10: hsla(213, 12%, 32%, 1); /* #454c54 */
+    --palette-neutral-11: hsla(214, 11%, 27%, 1); /* #393f46 */
+    --palette-neutral-12: hsla(216, 12%, 17%, 1); /* #25292e */
+    --palette-neutral-13: hsla(216, 12%, 14%, 1); /* #1f2328 */
+
+}
+
+:root[data-theme="dark"] {
+    --palette-neutral-0: hsla(210, 91%, 3%, 1); /* #010409 */
+    --palette-neutral-1: hsla(210, 66%, 8%, 1); /* #0d1117 */
+    --palette-neutral-2: hsla(210, 45%, 11%, 1); /* #151b23 */
+    --palette-neutral-3: hsla(210, 30%, 16%, 1); /* #212830 */
+    --palette-neutral-4: hsla(210, 22%, 18%, 1); /* #262c36 */
+    --palette-neutral-5: hsla(210, 19%, 21%, 1); /* #2a313c */
+    --palette-neutral-6: hsla(210, 18%, 24%, 1); /* #2f3742 */
+    --palette-neutral-7: hsla(210, 13%, 28%, 1); /* #3d444d */
+    --palette-neutral-8: hsla(215, 7%, 42%, 1); /* #656c76 */
+    --palette-neutral-9: hsla(216, 10%, 61%, 1); /* #9198a1 */
+    --palette-neutral-10: hsla(215, 18%, 78%, 1); /* #b7bdc8 */
+    --palette-neutral-11: hsla(214, 26%, 88%, 1); /* #d1d7e0 */
+    --palette-neutral-12: hsla(212, 63%, 97%, 1); /* #f0f6fc */
+    --palette-neutral-13: hsla(0, 0%, 100%, 1); /* #ffffff */
+}

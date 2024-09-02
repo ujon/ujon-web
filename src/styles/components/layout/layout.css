@@ -1,0 +1,16 @@
+.layout {
+    position: relative;
+    padding: var(--base-padding-md);
+
+    &.layout-narrow {
+        padding: var(--base-padding-lg);
+    }
+
+    &.layout-wide {
+        padding: var(--base-padding-sm);
+    }
+
+    &.layout-single {
+        height: var(--main-height);
+    }
+}

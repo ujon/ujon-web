@@ -1,0 +1,14 @@
+{
+  "locale": {
+    "en": "English",
+    "ko": "한국어"
+  },
+  "home": {
+    "name": "유종호",
+    "title": "Backend Engineer"
+  },
+  "setting": {
+    "theme": "테마",
+    "language": "언어"
+  }
+}

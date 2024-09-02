@@ -1,0 +1,14 @@
+{
+  "locale": {
+    "en": "English",
+    "ko": "한국어"
+  },
+  "home": {
+    "name": "Jongho Yoo",
+    "title": "Backend Engineer"
+  },
+  "setting": {
+    "theme": "Theme",
+    "language": "Language"
+  }
+}
