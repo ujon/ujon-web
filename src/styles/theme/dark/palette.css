@@ -1,0 +1,51 @@
+:root[data-theme="light"] {
+    --palette-black: #000000;
+    --palette-white: #FFFFFF;
+    
+    --palette-neutral-0: #0D0D0D;
+    --palette-neutral-1: #1A1A1A;
+    --palette-neutral-2: #242424;
+    --palette-neutral-3: #2E2E2E;
+    --palette-neutral-4: #7A7A7A;
+    --palette-neutral-5: #8A8A8A;
+    --palette-neutral-6: #999999;
+    --palette-neutral-7: #B8B8B8;
+    --palette-neutral-8: #D6D6D6;
+    --palette-neutral-9: #FFFFFF;
+
+    --palette-yellow-0: hsla(48, 100%, 91%, 1); /* #fff9e6 */
+    --palette-yellow-1: hsla(48, 96%, 73%, 1); /* #ffe89f */
+    --palette-yellow-2: hsla(48, 94%, 64%, 1); /* #ffd86c */
+    --palette-yellow-3: hsla(48, 92%, 55%, 1); /* #ffc83a */
+    --palette-yellow-4: hsla(48, 92%, 55%, 1); /* #ffbf00, primary */
+    --palette-yellow-5: hsla(48, 88%, 49%, 1); /* #e6ac00 */
+    --palette-yellow-6: hsla(48, 86%, 44%, 1); /* #cc9900 */
+    --palette-yellow-7: hsla(48, 84%, 39%, 1); /* #b38600 */
+    --palette-yellow-8: hsla(48, 82%, 34%, 1); /* #997300 */
+    --palette-yellow-9: hsla(48, 80%, 29%, 1); /* #806000 */
+
+    --palette-navy-0: hsla(210, 100%, 96%, 1); /* #e6f0ff */
+    --palette-navy-1: hsla(210, 100%, 86%, 1); /* #b3d1ff */
+    --palette-navy-2: hsla(210, 100%, 76%, 1); /* #80b3ff */
+    --palette-navy-3: hsla(210, 100%, 66%, 1); /* #4d94ff */
+    --palette-navy-4: hsla(210, 100%, 56%, 1); /* #1a75ff */
+    --palette-navy-5: hsla(210, 100%, 50%, 1); /* #004080, secondary */
+    --palette-navy-6: hsla(210, 100%, 45%, 1); /* #00366c */
+    --palette-navy-7: hsla(210, 100%, 40%, 1); /* #002e59 */
+    --palette-navy-8: hsla(210, 100%, 35%, 1); /* #002646 */
+    --palette-navy-9: hsla(210, 100%, 30%, 1); /* #001e33 */
+
+}
+
+:root[data-theme="dark"] {
+    --palette-neutral-0: #0D0D0D;
+    --palette-neutral-1: #1A1A1A;
+    --palette-neutral-2: #242424;
+    --palette-neutral-3: #2E2E2E;
+    --palette-neutral-4: #7A7A7A;
+    --palette-neutral-5: #8A8A8A;
+    --palette-neutral-6: #999999;
+    --palette-neutral-7: #B8B8B8;
+    --palette-neutral-8: #D6D6D6;
+    --palette-neutral-9: #FFFFFF;
+}

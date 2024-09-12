@@ -20,13 +20,12 @@
     --base-size-128: 8rem; /* 128px */
     --base-size-180: 11.25rem; /* 180px */
 
-    --base-radius-lg: 0rem;
-    --base-radius-md: 0rem;
+    --base-radius-lg: 0.75rem;
+    --base-radius-md: 0.75rem;
     --base-radius-sm: 0rem;
 
-    --base-padding-lg: 2.5rem;
+    --base-padding-lg: 3rem;
     --base-padding-md: 2rem;
-    /*--base-padding-md: 3.5rem;*/
     --base-padding-sm: 1rem;
 
     --base-icon-sm: 1.25rem;
@@ -35,11 +34,13 @@
 
     --base-blur: 10px;
 
-    --base-max-width: 1280px;
+
     /* actions:button */
     --botton-height-md: 3rem;
     --button-padding-md: 1rem;
     /* actions:tag */
+    --tag-height-xl: 3.5rem;
+    --tag-padding-xl: 0.75rem;
     --tag-height-md: 1.625rem;
     --tag-padding-md: 0.5rem;
     --tag-height-sm: 1.25rem;
@@ -48,4 +49,5 @@
     /* layout */
     --header-height: 4rem;
     --main-height: calc(100vh - var(--header-height));
+    --layout-max-width: 1280px;
 }

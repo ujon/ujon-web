@@ -5,8 +5,8 @@
     align-items: center;
     justify-content: center;
     border-radius: var(--base-radius-md);
+    color: var(--color-tag-on);
     background-color: var(--color-tag);
-    border-color: var(--color-tag);
 
     box-sizing: border-box;
     user-select: none;
@@ -19,4 +19,16 @@
     padding: 0 var(--tag-padding-sm);
     border-radius: var(--base-radius-sm);
 
+}
+.tag.tag-xl {
+    height: var(--tag-height-xl);
+    padding: 0 var(--tag-padding-xl);
+}
+
+.tag.tag-outline{
+    background-color: transparent;
+    color: var(--color-tag);
+    border-color: var(--color-tag);
+    border-width: 2px;
+    border-style: solid;
 }

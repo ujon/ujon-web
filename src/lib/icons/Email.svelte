@@ -1,12 +1,6 @@
-<script>
-	/**
-	 * @type string
-	 */
-	export let size = '24';
-	/**
-	 * @type string
-	 */
-	export let color = 'none';
+<script lang="ts">
+	export let size: string = '24';
+	export let color: string | undefined = undefined;
 </script>
 
 <svg
@@ -17,7 +11,7 @@
 	fill={color}
 	class={$$restProps.class}
 >
-	<path d="M12 13.183L19 8.75934V17H5V8.75934L12 13.183Z" />
-	<path d="M5.95982 7H18.0402L12 10.817L5.95982 7Z" />
-	<path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H0V24H24V0ZM21 6.3125V5H3V6.3125V19H21V6.3125Z" />
+	<path
+		d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
+	/>
 </svg>

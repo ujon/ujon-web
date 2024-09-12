@@ -1,0 +1,48 @@
+:root {
+    @media (prefers-color-scheme: light) {
+        --color-primary: var(--palette-yellow-4);
+        --color-secondary: var(--palette-navy-5);
+
+        --color-bg: var(--palette-white);
+        --color-text: var(--palette-black);
+        --color-text-sub: var(--palette-black);
+        --color-text-muted: var(--palette-black);
+        --color-text-disabled: var(--palette-black);
+        --color-text-link: var(--palette-black);
+
+        --color-btn: var(--palette-neutral-3);
+        --color-tag: var(--palette-neutral-3);
+
+        --color-icon: var(--palette-black);
+        --color-icon-email: var(--color-bg);
+        --color-icon-email-bg: var(--color-text);
+        --color-icon-github: var(--color-bg);
+        --color-icon-github-bg: var(--color-text);
+        --color-icon-linkedin: var(--color-bg);
+        --color-icon-linkedin-bg: var(--color-text);
+
+    }
+
+    @media (prefers-color-scheme: dark) {
+        --color-primary: var(--palette-yellow-4);
+        --color-secondary: var(--palette-navy-5);
+
+        --color-bg: var(--palette-black);
+        --color-text: var(--palette-neutral-4);
+        --color-text-sub: var(--palette-white);
+        --color-text-muted: var(--palette-white);
+        --color-text-disabled: var(--palette-white);
+        --color-text-link: var(--palette-white);
+
+        --color-btn: var(--palette-neutral-7);
+        --color-tag: var(--palette-neutral-7);
+
+        --color-icon: var(--palette-white);
+        --color-icon-email: var(--color-bg);
+        --color-icon-email-bg: var(--color-text);
+        --color-icon-github: var(--color-bg);
+        --color-icon-github-bg: var(--color-text);
+        --color-icon-linkedin: var(--color-bg);
+        --color-icon-linkedin-bg: var(--color-text);
+    }
+}

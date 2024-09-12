@@ -1,7 +1,5 @@
 <script>
 	import { page } from '$app/stores';
-	import Contact from '$components/Contact.svelte';
-	import Logo from '$icons/Logo.svelte';
 	import Menu from '$icons/Menu.svelte';
 
 	/**
@@ -12,10 +10,8 @@
 	 * @property {string} path - The path associated with the menu item.
 	 */
 	const navigation = [
-		{ name: 'Home', path: '/' },
-		{ name: 'Blog', path: '/blog' },
 		{ name: 'About', path: '/about' },
-		{ name: 'Setting', path: '/setting' }
+		{ name: 'Contact', path: '/contact' }
 	];
 	let isMenuOpen = false;
 
@@ -29,28 +25,25 @@
 }} />
 
 <header>
-	<a href="/" class="">
-		<Logo class="icon" />
-	</a>
-	<input type="checkbox" bind:checked={isMenuOpen} id="menu-toggle">
-	<label for="menu-toggle" class="btn-menu">
-		<Menu class="icon" />
-	</label>
-
-	<div class="menu">
-		<nav>
-			{#each navigation as it}
-				<a
-					href={it.path}
-					class:active={it.path==='/' ? pathname === it.path : pathname.startsWith(it.path)}
-					class="text-display-sm"
-					on:click={closeMenu}
-				>
-					{it.name}
-				</a>
-			{/each}
-		</nav>
-		<Contact />
+	<div class="container">
+		<a href="/" class="color-icon">Jongho Yoo</a>
+		<input type="checkbox" bind:checked={isMenuOpen} id="menu-toggle">
+		<label for="menu-toggle" class="btn-menu">
+			<Menu class="icon" />
+		</label>
+		<div class="menu">
+			<nav>
+				{#each navigation as it}
+					<a
+						href={it.path}
+						class:active={it.path==='/' ? pathname === it.path : pathname.startsWith(it.path)}
+						on:click={closeMenu}
+					>
+						{it.name}
+					</a>
+				{/each}
+			</nav>
+		</div>
 	</div>
 </header>
 
@@ -58,11 +51,7 @@
     header {
         position: sticky;
         height: var(--header-height);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         width: 100%;
-        padding: .75rem var(--base-padding-md);
         top: 0;
         z-index: 20;
         transform: translateZ(0);
@@ -70,6 +59,13 @@
         transition-property: box-shadow;
         transition-timing-function: cubic-bezier(.4, 0, .2, 1);
         backdrop-filter: blur(var(--base-blur));
+    }
+
+    header > .container {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
     }
 
     #menu-toggle {
@@ -90,6 +86,7 @@
     nav {
         flex: 1;
         display: flex;
+        justify-content: end;
     }
 
     nav a {
@@ -108,6 +105,10 @@
 
         &.active {
             font-weight: bold;
+        }
+
+        &:last-child {
+            padding-right: 0;
         }
     }
 

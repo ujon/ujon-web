@@ -1,2 +1,5 @@
+@import "typography";
+@import "animation.css";
+@import "color.css";
 @import "size.css";
-@import "typography.css";
+

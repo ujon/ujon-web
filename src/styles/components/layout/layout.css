@@ -14,3 +14,12 @@
         height: var(--main-height);
     }
 }
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--base-padding-md);
+    padding-left: var(--base-padding-md);
+    /*max-width: var(--layout-max-width);*/
+}
+

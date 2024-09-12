@@ -1,21 +1,8 @@
-<script>
-	/**
-	 * @type {string}
-	 */
-	export let title;
-	/**
-	 * @type {Date}
-	 */
-	export let date;
+<script lang="ts">
+	export let title: string;
+	export let date: Date;
 
-	/**
-	 * Date format option
-	 * @type {Object}
-	 * @property {string} year - "numeric"
-	 * @property {string} month - "short"
-	 * @property {string} day - "numeric"
-	 */
-	const options = { year: 'numeric', month: 'short', day: 'numeric' };
+	const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: 'numeric' };
 	$: formattedDate = date.toLocaleDateString('en', options);
 </script>
 <details>

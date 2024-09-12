@@ -1,0 +1,27 @@
+:root[data-theme="light"] {
+    --color-primary: var(--palette-yellow-4);
+    --color-secondary: var(--palette-navy-5);
+
+    --color-bg: var(--palette-white);
+    --color-bg-sub: var(--palette-neutral-2);
+    --color-text: var(--palette-black);
+    --color-text-sub: var(--palette-neutral-6);
+    --color-text-muted: var(--palette-neutral-4);
+    --color-text-disabled: var(--palette-black);
+    --color-text-link: var(--palette-black);
+
+    --color-btn: var(--palette-neutral-4);
+    --color-tag: var(--palette-neutral-2);
+    --color-tag-on: var(--palette-black);
+
+    --color-link: var(--palette-indigo-3);
+    --color-list-marker: var(--palette-neutral-6);
+
+    --color-icon: var(--palette-black);
+    --color-icon-email: var(--color-bg);
+    --color-icon-email-bg: var(--color-text);
+    --color-icon-github: var(--color-bg);
+    --color-icon-github-bg: var(--color-text);
+    --color-icon-linkedin: var(--color-bg);
+    --color-icon-linkedin-bg: var(--color-text);
+}

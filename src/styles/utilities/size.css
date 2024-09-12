@@ -1,6 +1,4 @@
 .icon {
-    width: var(--base-icon-md);
-    height: var(--base-icon-md);
     fill: var(--color-icon);
     user-select: none;
 }
@@ -8,6 +6,11 @@
 .icon.icon-sm {
     width: var(--base-icon-sm);
     height: var(--base-icon-sm);
+}
+
+.icon.icon-md {
+    width: var(--base-icon-md);
+    height: var(--base-icon-md);
 }
 
 .icon.icon-lg {

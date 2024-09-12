@@ -1,0 +1,23 @@
+.color-icon{
+    color: var(--color-icon);
+}
+
+.color-text {
+    color: var(--color-text);
+}
+
+.color-text-sub {
+    color: var(--color-text-sub);
+}
+
+.color-text-muted {
+    color: var(--color-text-muted);
+}
+
+.color-text-disabled {
+    color: var(--color-text-disabled);
+}
+
+.color-text-link {
+    color: var(--color-text-link);
+}

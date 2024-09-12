@@ -4,7 +4,7 @@ const themes = ['system', 'light', 'dark'] as const;
 
 type Theme = (typeof themes)[number];
 
-const theme: Writable<Theme> = writable('system');
+const theme: Writable<Theme> = writable('light');
 
 export { theme, themes };
 export type { Theme };

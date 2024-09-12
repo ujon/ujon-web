@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nanum+Gothic:wght@400;700;800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --font-family-base: "Inter", "Nanum Gothic";
+    --font-family-heading: "Plus Jakarta Sans";
+
+    /* Heading */
+    --text-display-size-lg: 7.5rem; /* 120px */
+    --text-display-lineHeight-lg: 1.1;
+
+    --text-display-size-md: 6.25rem; /* 100px */
+    --text-display-lineHeight-md: 1.1;
+
+    --text-display-size-sm: 5rem; /* 80px */
+    --text-display-lineHeight-sm: 1.1;
+
+    --text-title-size-lg: 3rem; /* 48px */
+    --text-title-lineHeight-lg: 1.2;
+
+    --text-title-size-md: 2rem; /* 32px */
+    --text-title-lineHeight-md: 1.2;
+
+    --text-title-size-sm: 1.625rem; /* 28px */
+    --text-title-lineHeight-sm: 1.2;
+
+    /* Body */
+    --text-body-size-lg: 1.5rem; /* 24px */
+    --text-body-lineHeight-lg: 1.2;
+
+    --text-body-size-md: 1.125rem; /* 18px */
+    --text-body-lineHeight-md: 1.625;
+
+    --text-body-size-sm: 1rem; /* 16px */
+    --text-body-lineHeight-sm: 1.6666;
+
+    --text-caption-size: 0.875rem; /* 14px */
+    --text-caption-lineHeight: 1.3333;
+}
