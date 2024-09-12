@@ -7,6 +7,18 @@
 	let wordDuration = duration / words.length;
 </script>
 
+<div class="slide-up-container">
+	{#each words as word, index}
+    <span
+			class="word text-title-md"
+			style="animation-duration: {duration}s; animation-delay: {wordDuration * index}s;"
+		>
+      {word}
+    </span>
+	{/each}
+	<span class="placeholder text-title-md">{longestWord}</span>
+</div>
+
 <style>
     .slide-up-container {
         position: relative;
@@ -41,16 +53,30 @@
             transform: translateY(-100%);
         }
     }
-</style>
 
-<div class="slide-up-container">
-	{#each words as word, index}
-    <span
-			class="word text-title-md"
-			style="animation-duration: {duration}s; animation-delay: {wordDuration * index}s;"
-		>
-      {word}
-    </span>
-	{/each}
-	<span class="placeholder text-title-md">{longestWord}</span>
-</div>
+    @keyframes slideLeft {
+        0%, 25% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        50% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        75%, 100% {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+    }
+
+    @media (max-width: 1023px) {
+        .slide-up-container {
+            text-align: center;
+            justify-content: center;
+        }
+
+        .word {
+            animation-name: slideLeft;
+        }
+    }
+</style>

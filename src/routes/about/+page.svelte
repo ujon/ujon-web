@@ -1,5 +1,6 @@
 <script lang="ts">
-	import TextShapeShiftAnimation from '$components/SlideUpAnimation.svelte';
+	import SlideUpAnimation from '$components/SlideUpAnimation.svelte';
+	import profile from '$lib/icons/profile.jpg';
 </script>
 
 <section class="hero">
@@ -8,8 +9,10 @@
 			<p class="text-title-md">5+ years</p>
 			<p class="color-text-sub">work experience</p>
 		</div>
-		<h1 class="text-title-md">test</h1>
-		<TextShapeShiftAnimation words={["Backend", "Frontend", "Infrastructure"]} />
+		<div class="profile">
+			<img alt="" src={profile} />
+		</div>
+		<SlideUpAnimation words={["Backend", "Frontend", "Infrastructure"]} />
 	</div>
 </section>
 
@@ -35,6 +38,37 @@
                 flex-direction: column;
                 gap: var(--base-size-12);
             }
+        }
+    }
+
+    .profile {
+        width: 18.75rem;
+        height: 25rem;
+        overflow: hidden;
+        border-radius: 50% / 25%;
+        display: inline-block;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @media (max-width: 1023px) {
+        .hero > .hero-body {
+            flex-direction: column;
+            gap: var(--base-size-56);
+        }
+
+        .hero-content {
+            text-align: center;
+        }
+
+        .profile {
+            width: 12.5rem;
+            height: 18.75rem;
+            order: -1;
         }
     }
 </style>
