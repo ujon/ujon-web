@@ -1,6 +1,25 @@
 <script lang="ts">
 	import SlideUpAnimation from '$components/SlideUpAnimation.svelte';
-	import profile from '$lib/icons/profile.jpg';
+	import profile from '$lib/images/profile.jpg';
+	import ftdot from '$lib/images/42dot.jpg';
+	import maumai from '$lib/images/maumai.jpg';
+	import CompanyCard from '$components/cards/CompanyCard.svelte';
+	import Kotlin from '$icons/techs/Kotlin.svelte';
+	import Java from '$icons/techs/Java.svelte';
+	import Javascript from '$icons/techs/Javascript.svelte';
+	import Typescript from '$icons/techs/Typescript.svelte';
+	import Spring from '$icons/techs/Spring.svelte';
+	import TechTag from '$components/TechTag.svelte';
+
+	const Lorem = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.';
+	const tech_stack = [
+		{ name: 'Kotlin', icon: Kotlin },
+		{ name: 'Java', icon: Java },
+		{ name: 'Javascript', icon: Javascript },
+		{ name: 'Typescript', icon: Typescript },
+		{ name: 'Spring Boot', icon: Spring },
+		{ name: 'Spring Batch', icon: Spring }
+	];
 </script>
 
 <section class="hero">
@@ -18,19 +37,42 @@
 		/>
 	</div>
 </section>
-<section style="text-align: center;">
+<section class="intro">
 	<h1 class="text-display-md">Jongho Yoo</h1>
-	<p style="margin-top: 2rem; white-space: pre-line;"></p>
+	<p>{Lorem}</p>
 </section>
-<section class="content">
-	<h1>Work Experience</h1>
-	<div>
-		<h2>42dot</h2>
+<section class="content presentation">
+	<h2 class="text-title-lg">WORK EXPERIENCE</h2>
+	<div class="content-body">
+		<CompanyCard
+			company="42dot"
+			jobPosition="Backend Engineer"
+			description={Lorem}
+			startDate={new Date(2022,2,2)}
+			endDate={new Date(2024,7,1)}
+			image={ftdot}
+		/>
 		<hr />
-		<h2>MaumAI</h2>
+		<CompanyCard
+			company="Maum AI"
+			jobPosition="Full Stack Engineer"
+			description={Lorem}
+			startDate={new Date(2019,7,1)}
+			endDate={new Date(2020,9,1)}
+			image={maumai}
+		/>
 	</div>
 </section>
-
+<section class="content presentation skill">
+	<h2 class="text-title-lg">MY SKILLS</h2>
+	<div class="content-body ">
+		{#each tech_stack as it}
+			<TechTag name={it.name}>
+				<svelte:component this={it.icon} />
+			</TechTag>
+		{/each}
+	</div>
+</section>
 
 <style>
     .hero {
@@ -76,6 +118,20 @@
         }
     }
 
+    .intro {
+        text-align: center;
+
+        & p {
+            margin-top: var(--base-size-40);
+            white-space: pre-line;
+        }
+    }
+
+    .skill .content-body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--base-size-8) var(--base-size-16);
+    }
 
     section {
         padding-top: var(--base-size-48);

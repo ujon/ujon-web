@@ -1,3 +1,5 @@
-<div class="container container-x container-y">
+<div
+	class="container container-x container-y"
+>
 	<slot />
 </div>

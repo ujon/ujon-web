@@ -20,11 +20,11 @@
 </script>
 
 <section class="hero">
-	<div class="hero-content">
+	<div class="content presentation hero-content">
 		<h1 class="text-display-md">{hero_title}</h1>
-		<p class="text-body-lg color-text-sub">{hero_subtitle}</p>
+		<p class="content-body text-body-lg color-text-sub ">{hero_subtitle}</p>
 	</div>
-<!--	<ArrowDown class="anim-bounce" size="2.5rem" color="var(&#45;&#45;color-icon)" />-->
+	<!--	<ArrowDown class="anim-bounce" size="2.5rem" color="var(&#45;&#45;color-icon)" />-->
 </section>
 
 <style>
@@ -46,7 +46,7 @@
     }
 
     section {
-				padding-top: var(--base-size-48);
+        padding-top: var(--base-size-48);
         padding-bottom: var(--base-size-48);
     }
 
