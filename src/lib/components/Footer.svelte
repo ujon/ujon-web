@@ -4,7 +4,7 @@
 
 
 <footer>
-	<div class="container">
+	<div class="container container-x">
 		<div>
 		<span class="text-body-sm">
 			© 2024 UJON •

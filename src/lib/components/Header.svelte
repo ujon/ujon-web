@@ -25,7 +25,7 @@
 }} />
 
 <header>
-	<div class="container">
+	<div class="container container-x">
 		<a href="/" class="color-icon">Jongho Yoo</a>
 		<input type="checkbox" bind:checked={isMenuOpen} id="menu-toggle">
 		<label for="menu-toggle" class="btn-menu">

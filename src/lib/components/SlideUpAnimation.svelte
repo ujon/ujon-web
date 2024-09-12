@@ -7,7 +7,7 @@
 	let wordDuration = duration / words.length;
 </script>
 
-<div class="slide-up-container">
+<div class="slide-up-container {$$restProps.class}">
 	{#each words as word, index}
     <span
 			class="word text-title-md"
