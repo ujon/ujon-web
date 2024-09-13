@@ -15,14 +15,14 @@
 	];
 	let isMenuOpen = false;
 
-	const closeMenu = () => isMenuOpen = false;
+	const closeMenu = () => {
+		setTimeout(() => {
+			isMenuOpen = false;
+		}, 100);
+	};
 
 	$: pathname = $page.url.pathname;
 </script>
-
-<svelte:window on:wheel|nonpassive={(e) => {
-	if(isMenuOpen) e.preventDefault();
-}} />
 
 <header>
 	<div class="container container-x">
@@ -118,24 +118,28 @@
             display: block;
         }
 
-        #menu-toggle:checked ~ .menu {
-            transform: scaleY(1);
-        }
-
         .menu {
-            transform: scaleY(0);
-            position: absolute;
+            z-index: -10;
             display: flex;
+            position: absolute;
+            visibility: hidden;
+            transform: scaleY(0);
             flex-direction: column;
-            top: var(--header-height);
+            top: 0;
             right: 0;
             left: 0;
             bottom: 0;
-            width: 100%;
-            height: var(--main-height);
+            width: 100vw;
+            height: 100vh;
             transform-origin: bottom;
-            transition-duration: 1s;
+            transition-duration: 3s;
             background-color: var(--color-bg);
+            transition: visibility 1s ease-in-out;
+        }
+
+        #menu-toggle:checked ~ .menu {
+            visibility: visible;
+            transform: scaleY(1);
         }
 
         nav {
@@ -143,7 +147,15 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            gap: var(--base-size-16);
+        }
 
+        nav a {
+            height: auto;
+            padding: 0;
+            text-align: center;
+            font-size: var(--text-title-size-md);
+            line-height: var(--text-title-lineHeight-md);
         }
     }
 </style>
