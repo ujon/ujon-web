@@ -1,9 +1,9 @@
 <script>
 	import '$styles/index.css';
 	import { theme } from '$stores/theme';
-	import { waitLocale } from 'svelte-i18n';
 	import Header from '$components/Header.svelte';
-	import Footer from '$components/Footer.svelte';
+	
+	import { waitLocale } from 'svelte-i18n';
 
 	export async function preload() {
 		return waitLocale();

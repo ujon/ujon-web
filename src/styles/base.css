@@ -44,5 +44,13 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-heading), sans-serif;
     white-space: pre-line;
 }
-h1, h2, h3, h4, h5, h6 {
+
+details {
+    & > summary {
+        list-style: none;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
 }

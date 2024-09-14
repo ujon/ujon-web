@@ -1,12 +1,12 @@
 <script lang="ts">
+	import { _ } from 'svelte-i18n';
 	import { contacts } from '$lib/config';
 	import Contact from '$components/Contact.svelte';
 
-	const title = 'FEEL FREE TO\nCONTACT ME';
 </script>
 
 <div class="contact-container">
-	<h2 class="text-display-sm">{title}</h2>
+	<h2 class="text-display-sm">{$_("contact.title")}</h2>
 	<a
 		href="mailto:{contacts.email}"
 		class="text-body-lg color-text-sub"
@@ -26,7 +26,7 @@
         align-items: center;
         justify-content: center;
         gap: 1.25rem;
-				height: var(--main-height);
-				user-select: none;
+        height: var(--main-height);
+        user-select: none;
     }
 </style>

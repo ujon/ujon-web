@@ -17,3 +17,7 @@
     width: var(--base-icon-lg);
     height: var(--base-icon-lg);
 }
+
+.icon.hover\:icon-primary:hover {
+    fill: var(--color-primary);
+}

@@ -10,5 +10,8 @@
   "setting": {
     "theme": "테마",
     "language": "언어"
+  },
+  "contact": {
+    "title": "연락주세요"
   }
 }

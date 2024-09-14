@@ -14,10 +14,19 @@
     outline: none;
 }
 
+.btn.btn-ghost {
+    background-color: transparent;
+}
+
+.btn.btn-wide {
+    width: 100%;
+}
+
 .btn:active {
     transform: scale(0.95);
     transition-duration: .2s;
     transition-timing-function: cubic-bezier(0, 0, .2, 1);
+    background-color: var(--color-primary);
 }
 
 .btn.no-animation:active {

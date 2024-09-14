@@ -1,6 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import Menu from '$icons/Menu.svelte';
+	import LocaleSwitch from '$components/LocaleSwitch.svelte';
 
 	/**
 	 * Represents a navigation menu with a collection of menu items.
@@ -43,6 +44,8 @@
 					</a>
 				{/each}
 			</nav>
+			<div class="menu-divider" />
+			<LocaleSwitch />
 		</div>
 	</div>
 </header>
@@ -79,13 +82,22 @@
     .menu {
         flex: 1;
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        gap: 1rem;
+    }
+
+    .menu-divider {
+				display: block;
+				width: 1px;
+        height: var(--base-size-24);
+        background-color: var(--color-text-sub);
     }
 
     nav {
         flex: 1;
         display: flex;
+        align-items: center;
         justify-content: end;
     }
 
