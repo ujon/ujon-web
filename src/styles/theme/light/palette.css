@@ -47,16 +47,3 @@
     --palette-navy-9: hsla(210, 100%, 30%, 1); /* #001e33 */
 
 }
-
-:root[data-theme="dark"] {
-    --palette-neutral-0: #0D0D0D;
-    --palette-neutral-1: #1A1A1A;
-    --palette-neutral-2: #242424;
-    --palette-neutral-3: #2E2E2E;
-    --palette-neutral-4: #7A7A7A;
-    --palette-neutral-5: #8A8A8A;
-    --palette-neutral-6: #999999;
-    --palette-neutral-7: #B8B8B8;
-    --palette-neutral-8: #D6D6D6;
-    --palette-neutral-9: #FFFFFF;
-}

@@ -1,8 +1,16 @@
 <script lang="ts">
-	import { _, locale, locales } from 'svelte-i18n';
-	import Locale from '$icons/Locale.svelte';
+	import { capitalize } from '$lib/utils/format';
+	import Theme from '$icons/Theme.svelte';
 
-	const handleLocale = (value: string) => locale.set(value);
+	const themes: string[] = ['system', 'light', 'dark'];
+
+	const handleTheme = (theme: string) => {
+		const one_year = 60 * 60 * 24 * 365;
+		document.cookie = `theme=${theme}; max-age=${one_year};`;
+		document.documentElement.setAttribute('data-theme', theme);
+		const metaColorScheme = document.querySelector('meta[name="color-scheme"]');
+		metaColorScheme?.setAttribute('content', theme === 'system' ? 'light dark' : theme);
+	};
 
 	const handleToggle = (event: Event & { currentTarget: EventTarget & HTMLDetailsElement }) => {
 		const isOpen = event.currentTarget?.open;
@@ -15,21 +23,20 @@
 			});
 		}
 	};
-
 </script>
 
-<details class="locale-switch-container" on:toggle={handleToggle}>
+<details class="theme-switch-container" on:toggle={handleToggle}>
 	<summary>
-		<Locale class="icon hover:icon-primary" />
+		<Theme class="icon hover:icon-primary"/>
 	</summary>
 	<ul>
-		{#each $locales as it}
+		{#each themes as it}
 			<li>
 				<button
 					class="btn btn-ghost btn-wide"
-					on:click|preventDefault={()=>handleLocale(it)}
+					on:click|preventDefault={()=>handleTheme(it)}
 				>
-					{$_(`locale.${it}`)}
+					{capitalize(it)}
 				</button>
 			</li>
 		{/each}
@@ -37,12 +44,12 @@
 </details>
 
 <style>
-    .locale-switch-container {
+    .theme-switch-container {
         position: relative;
         display: inline-block;
     }
 
-    .locale-switch-container ul {
+    .theme-switch-container ul {
         list-style: none;
         position: absolute;
         inset-inline-end: 0;
