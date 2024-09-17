@@ -1,5 +1,3 @@
-@import "dark.css";
-@import "light/color.css";
-@import "system.css";
 
+@import "dark";
 @import "light";

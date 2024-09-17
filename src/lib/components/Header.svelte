@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import Menu from '$icons/Menu.svelte';
 	import LocaleSwitch from '$components/LocaleSwitch.svelte';
+	import ThemeSwitch from '$components/ThemeSwitch.svelte';
 
 	/**
 	 * Represents a navigation menu with a collection of menu items.
@@ -45,7 +46,10 @@
 				{/each}
 			</nav>
 			<div class="menu-divider" />
-			<LocaleSwitch />
+			<div class="menu-action">
+				<LocaleSwitch />
+				<ThemeSwitch />
+			</div>
 		</div>
 	</div>
 </header>
@@ -88,10 +92,16 @@
     }
 
     .menu-divider {
-				display: block;
-				width: 1px;
+        display: block;
+        width: 1px;
         height: var(--base-size-24);
         background-color: var(--color-text-sub);
+    }
+
+    .menu-action {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
 
     nav {
@@ -137,6 +147,8 @@
             visibility: hidden;
             transform: scaleY(0);
             flex-direction: column;
+						justify-content: center;
+						align-items: center;
             top: 0;
             right: 0;
             left: 0;
@@ -147,6 +159,7 @@
             transition-duration: 3s;
             background-color: var(--color-bg);
             transition: visibility 1s ease-in-out;
+						gap: 2rem;
         }
 
         #menu-toggle:checked ~ .menu {
@@ -155,7 +168,7 @@
         }
 
         nav {
-            flex: 1;
+            flex: 0;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -169,5 +182,13 @@
             font-size: var(--text-title-size-md);
             line-height: var(--text-title-lineHeight-md);
         }
+
+        .menu-divider {
+            display: none;
+        }
+
+				.menu-action {
+						gap: 2rem;
+				}
     }
 </style>

@@ -1,7 +1,5 @@
 <script lang="ts">
 	export let size: string = '24';
-	export let color: string | undefined = undefined;
-
 </script>
 
 <svg
@@ -9,7 +7,6 @@
 	width={size}
 	height={size}
 	viewBox="0 0 24 24"
-	fill={color}
 	class={$$restProps.class}
 >
 	<path
