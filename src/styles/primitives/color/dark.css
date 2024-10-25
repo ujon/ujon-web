@@ -1,0 +1,13 @@
+:root[data-theme='dark'] {
+    /* background */
+    --color-bg-0: #2E2E2E;
+    --color-bg-1: #424242;
+    --color-bg-2: #575757;
+    /* text */
+    --color-text-0: #FFFFFF;
+    --color-text-1: #ABABAB;
+    /* border, divider and etc */
+    --color-elem-0: #6B6B6B;
+    --color-elem-1: #808080;
+    --color-elem-2: #ABABAB;
+}

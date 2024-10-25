@@ -1,0 +1,26 @@
+button {
+    height: 3rem;
+    cursor: pointer;
+    user-select: none;
+    padding: 0 1rem;
+    color: var(--color-text-0);
+    background-color: var(--color-bg-0);
+    border-color: transparent;
+    border-width: 0.0625rem;
+    border-style: solid;
+    border-radius: 0;
+}
+
+.btn {
+    border-color: var(--color-elem-0);
+
+    &:hover {
+        background-color: var(--color-bg-0);
+        border-color: var(--color-elem-1);
+    }
+
+    &:active {
+        border-color: var(--color-elem-2);
+    }
+}
+

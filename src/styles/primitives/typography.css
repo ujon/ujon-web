@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --font-family-base: "Inter";
+
+    /* text-display-1 */
+    --text-display-size-1: 80px;
+    --text-display-weight-1: 700;
+    --text-display-lineHeight-1: 84px;
+    --text-display-letterSpacing-1: -1.6px;
+
+    /* text-display-2 */
+    --text-display-size-2: 72px;
+    --text-display-weight-2: 700;
+    --text-display-lineHeight-2: 76px;
+    --text-display-letterSpacing-2: -1.44px;
+
+    /* text-display-3 */
+    --text-display-size-3: 54px;
+    --text-display-weight-3: 700;
+    --text-display-lineHeight-3: 60px;
+    --text-display-letterSpacing-3: -1.08px;
+
+    /* text-headline-1 */
+    --text-headline-size-1: 40px;
+    --text-headline-weight-1: 700;
+    --text-headline-lineHeight-1: 48px;
+    --text-headline-letterSpacing-1: -0.8px;
+
+    /* text-headline-2 */
+    --text-headline-size-2: 24px;
+    --text-headline-weight-2: 700;
+    --text-headline-lineHeight-2: 32px;
+    --text-headline-letterSpacing-2: -0.48px;
+
+    /* text-headline-3 */
+    --text-headline-size-3: 20px;
+    --text-headline-weight-3: 700;
+    --text-headline-lineHeight-3: 28px;
+    --text-headline-letterSpacing-3: -0.28px;
+
+    /* text-headline-4 */
+    --text-headline-size-4: 18px;
+    --text-headline-weight-4: 700;
+    --text-headline-lineHeight-4: 24px;
+    --text-headline-letterSpacing-4: -0.252px;
+
+    /* text-uppercase */
+    --text-uppercase-size: 16px;
+    --text-uppercase-weight: 700;
+    --text-uppercase-lineHeight: 24px;
+    --text-uppercase-letterSpacing: 0;
+
+    /* text-body */
+    --text-body-size: 18px;
+    --text-body-weight: 400;
+    --text-body-lineHeight: 26px;
+    --text-body-letterSpacing: 0;
+
+    /* text-caption */
+    --text-caption-size: 16px;
+    --text-caption-weight: 400;
+    --text-caption-lineHeight: 24px;
+    --text-caption-letterSpacing: 0;
+
+    /* text-button */
+    --text-button-size: 14px;
+    --text-button-weight: 400;
+    --text-button-lineHeight: 20px;
+    --text-button-letterSpacing: 0;
+}

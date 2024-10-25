@@ -1,0 +1,39 @@
+.bg-color-0 {
+    background-color: var(--color-bg-0);
+}
+
+.bg-color-1 {
+    background-color: var(--color-bg-1);
+}
+
+.bg-color-2 {
+    background-color: var(--color-bg-2);
+}
+
+.text-color-0 {
+    color: var(--color-text-0);
+}
+
+.text-color-1 {
+    color: var(--color-text-1);
+}
+
+.border-color-0 {
+    border-color: var(--color-elem-0);
+}
+
+.border-color-1 {
+    border-color: var(--color-elem-1);
+}
+
+.border-color-2 {
+    border-color: var(--color-elem-2);
+}
+
+.icon-color-0 {
+    fill: var(--color-text-0);
+}
+
+.icon-color-1 {
+    fill: var(--color-text-1);
+}

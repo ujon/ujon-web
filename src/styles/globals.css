@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: var(--font-family-base), sans-serif;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: var(--color-text-0);
+    background-color: var(--color-bg-0);
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+hr {
+    color: var(--color-elem-2);
+}
+
+input {
+    height: 3rem;
+    padding: 0 1rem;
+    background-color: transparent;
+    border-width: 0.0625rem;
+    border-color: var(--color-elem-2);
+    border-radius: 0;
+    outline: none;
+}
+
+input::placeholder {
+    color: var(--color-text-1);
+}
+
+input:focus {
+    border-color: var(--color-elem-1);
+}
+

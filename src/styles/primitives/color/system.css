@@ -1,0 +1,29 @@
+:root[data-theme='system'] {
+    @media (prefers-color-scheme: light) {
+        /* background */
+        --color-bg-0: #FFFFFF;
+        --color-bg-1: #F0F0F0;
+        --color-bg-2: #E5E5E5;
+        /* text */
+        --color-text-0: #2E2B26;
+        --color-text-1: #848484;
+        /* border, divider and etc */
+        --color-elem-0: #D6D6D6;
+        --color-elem-1: #C3C2C1;
+        --color-elem-2: #848484;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        /* background */
+        --color-bg-0: #2E2E2E;
+        --color-bg-1: #424242;
+        --color-bg-2: #575757;
+        /* text */
+        --color-text-0: #FFFFFF;
+        --color-text-1: #ABABAB;
+        /* border, divider and etc */
+        --color-elem-0: #6B6B6B;
+        --color-elem-1: #808080;
+        --color-elem-2: #ABABAB;
+    }
+}

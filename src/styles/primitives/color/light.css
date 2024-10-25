@@ -1,0 +1,13 @@
+:root[data-theme='light'] {
+    /* background */
+    --color-bg-0: #FFFFFF;
+    --color-bg-1: #F0F0F0;
+    --color-bg-2: #E5E5E5;
+    /* text */
+    --color-text-0: #2E2B26;
+    --color-text-1: #848484;
+    /* border, divider and etc */
+    --color-elem-0: #D6D6D6;
+    --color-elem-1: #C3C2C1;
+    --color-elem-2: #848484;
+}

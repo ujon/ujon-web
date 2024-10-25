@@ -1,0 +1,78 @@
+
+.text-display-1 {
+    font-size: var(--text-display-size-1);
+    font-weight: var(--text-display-weight-1);
+    line-height: var(--text-display-lineHeight-1);
+    letter-spacing: var(--text-display-letterSpacing-1);
+}
+
+.text-display-2 {
+    font-size: var(--text-display-size-2);
+    font-weight: var(--text-display-weight-2);
+    line-height: var(--text-display-lineHeight-2);
+    letter-spacing: var(--text-display-letterSpacing-2);
+}
+
+.text-display-3 {
+    font-size: var(--text-display-size-3);
+    font-weight: var(--text-display-weight-3);
+    line-height: var(--text-display-lineHeight-3);
+    letter-spacing: var(--text-display-letterSpacing-3);
+}
+
+.text-headline-1 {
+    font-size: var(--text-headline-size-1);
+    font-weight: var(--text-headline-weight-1);
+    line-height: var(--text-headline-lineHeight-1);
+    letter-spacing: var(--text-headline-letterSpacing-1);
+}
+
+.text-headline-2 {
+    font-size: var(--text-headline-size-2);
+    font-weight: var(--text-headline-weight-2);
+    line-height: var(--text-headline-lineHeight-2);
+    letter-spacing: var(--text-headline-letterSpacing-2);
+}
+
+.text-headline-3 {
+    font-size: var(--text-headline-size-3);
+    font-weight: var(--text-headline-weight-3);
+    line-height: var(--text-headline-lineHeight-3);
+    letter-spacing: var(--text-headline-letterSpacing-3);
+}
+
+.text-headline-4 {
+    font-size: var(--text-headline-size-4);
+    font-weight: var(--text-headline-weight-4);
+    line-height: var(--text-headline-lineHeight-4);
+    letter-spacing: var(--text-headline-letterSpacing-4);
+}
+
+.text-uppercase {
+    font-size: var(--text-uppercase-size);
+    font-weight: var(--text-uppercase-weight);
+    line-height: var(--text-uppercase-lineHeight);
+    letter-spacing: var(--text-uppercase-letterSpacing);
+    text-transform: uppercase;
+}
+
+.text-body {
+    font-size: var(--text-body-size);
+    font-weight: var(--text-body-weight);
+    line-height: var(--text-body-lineHeight);
+    letter-spacing: var(--text-body-letterSpacing);
+}
+
+.text-caption {
+    font-size: var(--text-caption-size);
+    font-weight: var(--text-caption-weight);
+    line-height: var(--text-caption-lineHeight);
+    letter-spacing: var(--text-caption-letterSpacing);
+}
+
+.text-button {
+    font-size: var(--text-button-size);
+    font-weight: var(--text-button-weight);
+    line-height: var(--text-button-lineHeight);
+    letter-spacing: var(--text-button-letterSpacing);
+}
