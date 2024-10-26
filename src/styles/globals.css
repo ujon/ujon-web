@@ -12,6 +12,11 @@
 
 html {
     scroll-behavior: smooth;
+
+    font-size: var(--text-body-size);
+    font-weight: var(--text-body-weight);
+    line-height: var(--text-body-lineHeight);
+    letter-spacing: var(--text-body-letterSpacing);
 }
 
 

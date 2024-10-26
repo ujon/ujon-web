@@ -9,6 +9,12 @@ button {
     border-width: 0.0625rem;
     border-style: solid;
     border-radius: 0;
+
+    /* source: $styles/primitives/typography.css */
+    font-size: var(--text-button-size);
+    font-weight: var(--text-button-weight);
+    line-height: var(--text-button-lineHeight);
+    letter-spacing: var(--text-button-letterSpacing);
 }
 
 .btn {
