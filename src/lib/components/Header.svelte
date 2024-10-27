@@ -2,7 +2,7 @@
 
 </script>
 
-<header class="header-h">
+<header class="header-h padding-x">
 	<div>
 		<div class="text-headline-3 logo">
 			<a href="/">UJON</a>
@@ -17,7 +17,6 @@
     header {
         position: sticky;
         top: 0;
-        padding: 0 2rem;
         z-index: 1;
 
         & > div {

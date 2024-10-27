@@ -6,3 +6,8 @@
 .hero-h {
     height: calc(100vh - var(--header-h));
 }
+
+.padding-x {
+    padding-left: var(--padding-x);
+    padding-right: var(--padding-x);
+}
