@@ -11,3 +11,8 @@
     padding-left: var(--padding-x);
     padding-right: var(--padding-x);
 }
+
+.padding-y {
+    padding-top: var(--padding-y);
+    padding-bottom: var(--padding-y);
+}
