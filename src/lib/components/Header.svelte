@@ -1,5 +1,6 @@
 <script>
-
+	import { page } from '$app/stores';
+	import { navigation } from '$lib/constants/common.js';
 </script>
 
 <header class="header-h padding-x bg-color-0">
@@ -8,7 +9,16 @@
 			<a href="/">UJON</a>
 		</div>
 		<nav>
-
+			{#each navigation as it}
+				<a
+					href={it.path}
+					class="text-caption"
+					class:active={it.path === "/" ? $page.url.pathname === it.path : $page.url.pathname.startsWith(it.path)}
+					aria-label={it.name}
+				>
+					{it.name}
+				</a>
+			{/each}
 		</nav>
 	</div>
 </header>
@@ -29,6 +39,14 @@
                 flex: 1 1 0;
             }
 
+            & > nav {
+                display: flex;
+                gap: 2rem;
+
+                & > .active {
+                    font-weight: bold;
+                }
+            }
         }
     }
 </style>
