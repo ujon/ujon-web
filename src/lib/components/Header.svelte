@@ -2,7 +2,7 @@
 
 </script>
 
-<header class="header-h padding-x">
+<header class="header-h padding-x bg-color-0">
 	<div>
 		<div class="text-headline-3 logo">
 			<a href="/">UJON</a>

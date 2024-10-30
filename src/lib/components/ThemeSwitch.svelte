@@ -3,13 +3,13 @@
 	import { cookies } from '$lib/utils/cookies.js';
 	import { COOKIE_THEME } from '$lib/constants/cookies.js';
 
-	let theme = $state(cookies.get(COOKIE_THEME));
+	let theme = $state(cookies.get(COOKIE_THEME) || 'system');
 
 	/**
 	 * @param value {string}
 	 */
 	const handleTheme = (value) => {
-		theme = value
+		theme = value;
 		cookies.set(COOKIE_THEME, value, {
 			expires: 365
 		});

@@ -4,7 +4,7 @@
 	import ContactLinks from '$lib/components/ContactLinks.svelte';
 </script>
 
-<footer class="container padding-x padding-y border-color-1">
+<footer class="padding-x padding-y border-color-1">
 	<div class="content">
 		<LocaleSwitch />
 		<ThemeSwitch />
@@ -16,11 +16,12 @@
 </footer>
 
 <style>
-    .container {
+    footer {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+        border-top-style: solid;
         border-top-width: 0.0625rem;
 
         & > .content {
@@ -43,7 +44,7 @@
     }
 
     @media (min-width: 1024px) {
-        .container {
+        footer {
             align-items: start;
 
             & > .following {
