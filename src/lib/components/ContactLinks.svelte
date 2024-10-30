@@ -16,13 +16,13 @@
 </script>
 
 <div class="container">
-	<a href={contacts.linkedin}>
+	<a href={contacts.linkedin} aria-label="LinkedIn">
 		<LinkedIn size={size} class="icon-color-0" />
 	</a>
-	<a href={contacts.github}>
+	<a href={contacts.github} aria-label="Github">
 		<Github size={size} class="icon-color-0" />
 	</a>
-	<a href={`mailto:${contacts.email}`}>
+	<a href={`mailto:${contacts.email}`} aria-label="Email">
 		<Email size={size} class="icon-color-0" />
 	</a>
 </div>

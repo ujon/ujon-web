@@ -4,6 +4,10 @@
 	import Footer from '$lib/components/Footer.svelte';
 </script>
 
+<svelte:head>
+	<title>ujon</title>
+</svelte:head>
+
 <Header />
 <main>
 	<slot />
