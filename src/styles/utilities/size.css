@@ -1,10 +1,5 @@
-
 .header-h {
     height: var(--header-h);
-}
-
-.hero-h {
-    height: calc(100vh - var(--header-h));
 }
 
 .padding-x {

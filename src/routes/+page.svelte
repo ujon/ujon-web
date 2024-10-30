@@ -17,6 +17,7 @@
 
 <style>
     .hero-container {
+				height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -48,6 +49,8 @@
 
     @media (min-width: 1024px) {
         .hero-container {
+            height: calc(100vh - var(--header-h));
+
             & > .content {
                 flex-direction: row;
 
