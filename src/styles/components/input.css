@@ -1,14 +1,18 @@
-button {
+input {
     height: 3rem;
-    cursor: pointer;
-    user-select: none;
     padding: 0 1rem;
     color: var(--color-text-0);
-    background-color: var(--color-bg-0);
-    border-color: transparent;
+    background-color: transparent;
+    /*border: none;*/
     border-width: 0.0625rem;
     border-style: solid;
+    border-color: var(--color-elem-1);
     border-radius: 0;
+    outline: none;
+}
+
+input::placeholder {
+    color: var(--color-text-1);
 
     /* source: $styles/primitives/typography.css */
     font-size: var(--text-button-size);
@@ -17,11 +21,6 @@ button {
     letter-spacing: var(--text-button-letterSpacing);
 }
 
-.btn {
-    border-color: var(--color-elem-1);
-
-    &:hover {
-        border-color: var(--color-elem-2);
-    }
+input:focus {
+    border-color: var(--color-elem-2);
 }
-
