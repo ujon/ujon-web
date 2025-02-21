@@ -1,7 +1,7 @@
 import { locales, loadTranslations, translations, defaultLocale } from '$lib/translations';
 import { COOKIE_LOCALE } from '$lib/constants/cookies.js';
 
-/** @type {import('@sveltejs/kit').ServerLoad} */
+/** @type {import('./$types').LayoutServerLoad} */
 export const load = async ({ url, cookies, request }) => {
 	const { pathname } = url;
 
