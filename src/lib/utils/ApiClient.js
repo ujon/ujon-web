@@ -1,15 +1,19 @@
+import { PUBLIC_UJON_API } from '$env/static/public';
+
 /**
  * @typedef {Object} RequestOptions
  * @property {Object} [headers]
  * @property {Object} [body]
  * @property {Object} [params]
  */
-
 class ApiClient {
-	constructor(baseURL, defaultHeaders = {
-		'Content-Type': 'application/json'
-	}) {
-		this.baseURL = baseURL;
+	constructor(
+		baseURL,
+		defaultHeaders = {
+			'Content-Type': 'application/json'
+		}
+	) {
+		this.baseURL = PUBLIC_UJON_API;
 		this.defaultHeaders = defaultHeaders;
 		this.requestInterceptors = [];
 		this.responseInterceptors = [];

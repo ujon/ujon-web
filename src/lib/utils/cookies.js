@@ -1,5 +1,8 @@
 import { browser } from '$app/environment';
 
+/**
+ * client side cookie util
+ */
 export const cookies = {
 	/**
 	 *
