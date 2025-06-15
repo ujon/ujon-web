@@ -1,11 +1,10 @@
 :root {
-    --header-h: 4rem;
-    --padding-x: 2rem;
+    --header-h: 3.5rem;
+    --padding-x: 6vw;
     --padding-y: 1.5rem;
 
     @media (min-width: 1024px) {
-        --header-h: 5rem;
-        --padding-x: 9rem;
+        --header-h: 4rem;
         --padding-y: 4rem;
     }
 }
